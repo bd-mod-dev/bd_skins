@@ -24,7 +24,7 @@ require "Vehicles/ISUI/93fordF350_CarMechanicsOverlay"
 require "Vehicles/ISUI/98stageaCarMechanicsOverlay"
 require "Vehicles/ISUI/isoContainerCarMechanicsOverlay"
 --require "Vehicles/ISUI/815TatraCarMechanicsOverlay"
-require "Vehicles/ISUI/91fordLTDCarMechanicsOverlay.lua"
+require "Vehicles/ISUI/91fordLTDCarMechanicsOverlay"
 
 local x = ISCarMechanicsOverlay.CarList
 

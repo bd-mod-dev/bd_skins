@@ -60,5 +60,13 @@
 	"IGUI_VehicleNameTatra8156X6FD_Watermelon": "'Tatra815 6x6 - Goidavozka",
 	"IGUI_VehicleName92nissanGTR_RACCOON": "'92 NISSAN Skyline GT-R (R32) - T-RACCOON",
 	"IGUI_VehicleName92amgeneralM998_Dismor": "'92 AM General M998 HMMWV - Dismor",
-	"IGUI_VehicleName92amgeneralM998_LILITH": "'92 AM General M998 HMMWV - LILITH"
+	"IGUI_VehicleName92amgeneralM998_LILITH": "'92 AM General M998 HMMWV - LILITH",
+	"IGUI_VehicleName91fordLTD_Rusty": "'91 Ford LTD Crown Victoria - Rusty",
+    "IGUI_VehicleName91fordLTDksp_Rusty": "'91 Ford LTD Crown Victoria State Trooper - Rusty",
+    "IGUI_VehicleName91fordLTDksp2_Rusty": "'91 Ford LTD Crown Victoria State Trooper - Rusty",
+    "IGUI_VehicleName91fordLTDwagon_Rusty": "'91 Ford LTD Country Squire - Rusty",
+    "IGUI_VehicleName91fordLTDpd_Rusty": "'91 Ford LTD Crown Victoria Police - Rusty",
+    "IGUI_VehicleName91fordLTDunmarked_Rusty": "'91 Ford LTD Crown Victoria Unmarked - Rusty",
+    "IGUI_VehicleName91fordLTDranger_Rusty": "'91 Ford LTD Crown Victoria Ranger - Rusty",
+    "IGUI_VehicleName91fordLTDtaxi_Rusty": "'91 Ford LTD Crown Victoria Taxi - Rusty"
 }

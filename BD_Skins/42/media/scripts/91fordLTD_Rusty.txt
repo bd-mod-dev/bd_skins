@@ -35,7 +35,14 @@ module Base
 		shader = damn_wheel_shader,
 		scale = 0.1,
 	}
-		vehicle 91fordLTD_Rusty
+	model 91fordLTDInteriorWagon_Rusty
+	{
+		mesh = vehicles/Vehicles_91fordLTD_Body|vic91_interior_wagon,
+		texture = Vehicles/Vehicles_91fordLTD_Interior_Rusty,
+		shader = damn_wheel_shader,
+		scale = 0.1,
+	}
+	vehicle 91fordLTD_Rusty
 	{
 		mechanicType = 1,
 		offRoadEfficiency = 0.83,
@@ -497,9 +504,9 @@ module Base
 		}
 
 		template = Headlight,
-        template = LTD91Windows,
+		template = LTD91Windows,
 		template = LTD91Windshields,
-        template = DAMNglobal,
+		template = DAMNglobal,
 		template = DAMN91fordLTD,
 		useChassisPhysicsCollision = false,
 
@@ -563,17 +570,15 @@ module Base
 		{
 			texture = Vehicles/Vehicles_91fordLTDksp_Shell_Rusty,
 		}
-        skin
+		
+		skin
 		{
 			texture = Vehicles/Vehicles_91fordLTDksp_Shell_sup_Rusty,
 		}
-        skin
+		
+		skin
 		{
 			texture = Vehicles/Vehicles_91fordLTDksp_Shell_mcd_Rusty,
-		}
-        skin
-		{
-			texture = Vehicles/Vehicles_91fordLTDksp_Shell_pat_Rusty,
 		}
 
 		textureRust = Vehicles/Vehicles_91fordLTD_Rust,
@@ -992,11 +997,11 @@ module Base
 		}
 
 		template = Headlight,
-        template = LTD91Windows,
+		template = LTD91Windows,
 		template = LTD91Windshields,
-        template = DAMNglobal,
+		template = DAMNglobal,
 		template = DAMN91fordLTDksp,
-        useChassisPhysicsCollision = false,
+		useChassisPhysicsCollision = false,
 
 		physics box
 		{
@@ -1475,11 +1480,11 @@ module Base
 		}
 
 		template = Headlight,
-        template = LTD91Windows,
+		template = LTD91Windows,
 		template = LTD91Windshields,
-        template = DAMNglobal,
+		template = DAMNglobal,
 		template = DAMN91fordLTDksp2,
-        useChassisPhysicsCollision = false,
+		useChassisPhysicsCollision = false,
 
 		physics box
 		{
@@ -1541,21 +1546,15 @@ module Base
 		{
 			texture = Vehicles/Vehicles_91fordLTDpd_Shell_Black_Rusty,
 		}
-        skin
+		
+		skin
 		{
 			texture = Vehicles/Vehicles_91fordLTDpd_Shell_Blue_Rusty,
 		}
-        skin
+		
+		skin
 		{
 			texture = Vehicles/Vehicles_91fordLTDso_Shell_sup_Rusty,
-		}
-        skin
-		{
-			texture = Vehicles/Vehicles_91fordLTDso_Shell_mcd_Rusty,
-		}
-        skin
-		{
-			texture = Vehicles/Vehicles_91fordLTDso_Shell_pat_Rusty,
 		}
 
 		textureRust = Vehicles/Vehicles_91fordLTD_Rust,
@@ -1974,11 +1973,11 @@ module Base
 		}
 
 		template = Headlight,
-        template = LTD91Windows,
+		template = LTD91Windows,
 		template = LTD91Windshields,
-        template = DAMNglobal,
+		template = DAMNglobal,
 		template = DAMN91fordLTDpd,
-        useChassisPhysicsCollision = false,
+		useChassisPhysicsCollision = false,
 
 		physics box
 		{
@@ -2427,11 +2426,11 @@ module Base
 		}
 
 		template = Headlight,
-        template = LTD91Windows,
+		template = LTD91Windows,
 		template = LTD91Windshields,
-        template = DAMNglobal,
+		template = DAMNglobal,
 		template = DAMN91fordLTDranger,
-        useChassisPhysicsCollision = false,
+		useChassisPhysicsCollision = false,
 
 		physics box
 		{
@@ -2902,11 +2901,11 @@ module Base
 		}
 
 		template = Headlight,
-        template = LTD91Windows,
+		template = LTD91Windows,
 		template = LTD91Windshields,
-        template = DAMNglobal,
+		template = DAMNglobal,
 		template = DAMN91fordLTDtaxi,
-        useChassisPhysicsCollision = false,
+		useChassisPhysicsCollision = false,
 
 		physics box
 		{
@@ -2969,7 +2968,7 @@ module Base
 			texture = Vehicles/Vehicles_91fordLTDunmarked_Shell_Black_Rusty,
 		}
 
-        skin
+		skin
 		{
 			texture = Vehicles/Vehicles_91fordLTDunmarked_Shell_Gray_Rusty,
 		}
@@ -3176,7 +3175,7 @@ module Base
 			xywh = 0.0000 -3.0444 1.6889 0.7778,
 		}
 
-        area Roofrack
+		area Roofrack
 		{
 			xywh = 0.0000 -0.3556 3.1333 2.4889,
 		}
@@ -3237,7 +3236,7 @@ module Base
 		template = LTD91SpareTires_Rusty,
 		template = LTD91BarrierR_Rusty,
 		template = DAMNGunrack,
-        template = LTD91RoofrackSedan_Rusty,
+		template = LTD91RoofrackSedan_Rusty,
 
 		part GloveBox
 		{
@@ -3391,11 +3390,11 @@ module Base
 		}
 
 		template = Headlight,
-        template = LTD91Windows,
+		template = LTD91Windows,
 		template = LTD91Windshields,
-        template = DAMNglobal,
+		template = DAMNglobal,
 		template = DAMN91fordLTDunmarked,
-        useChassisPhysicsCollision = false,
+		useChassisPhysicsCollision = false,
 
 		physics box
 		{
@@ -3751,7 +3750,7 @@ module Base
 
 			model intvic91wagon
 			{
-				file = 91fordLTDInteriorWagon,
+				file = 91fordLTDInteriorWagon_Rusty,
 				scale = 1.0,
 				offset = 0.0000 0.0000 0.0000,
 				rotate = 0.0000 0.0000 0.0000,
@@ -3891,9 +3890,9 @@ module Base
 		}
 
 		template = Headlight,
-        template = LTD91WindowsWagon,
+		template = LTD91WindowsWagon,
 		template = LTD91WindshieldsWagon,
-        template = DAMNglobal,
+		template = DAMNglobal,
 		template = DAMN91fordLTDwagon,
 		useChassisPhysicsCollision = false,
 
