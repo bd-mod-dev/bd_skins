@@ -1,0 +1,146 @@
+module Base
+{
+
+	sound horn_Alkash
+    {
+        clip
+        {
+        file = media/sound/horn_Alkash.ogg,     
+        }
+    }
+
+	sound horn_vstanislav
+    {
+        clip
+        {
+        file = media/sound/horn_vstanislav.ogg,     
+        }
+    }
+
+	sound horn_Square
+    {
+        clip
+        {
+        file = media/sound/horn_Square.ogg,     
+        }
+    }
+
+
+	sound horn_Kakcuk
+    {
+	loop = true,
+        clip
+        {
+        file = media/sound/horn_Kakcuk.ogg,     
+        }
+    }
+
+	sound horn_Watermelon
+    {
+	loop = true,
+        clip
+        {
+        file = media/sound/horn_Watermelom.ogg,     
+        }
+    }
+
+	sound horn_ganksta
+    {
+	loop = true,
+        clip
+        {
+        file = media/sound/horn_ganksta.ogg,     
+        }
+    }
+
+	sound horn_stik
+    {
+	loop = true,
+        clip
+        {
+        file = media/sound/horn_stick.ogg,     
+        }
+    }
+
+	sound horn_Pol217
+    {
+	loop = true,
+        clip
+        {
+        file = media/sound/horn_Pol217.ogg,     
+        }
+    }
+
+	sound horn_Xait
+    {
+	loop = true,
+        clip
+        {
+        file = media/sound/horn_Xait.ogg,     
+        }
+    }
+
+	sound horn_Kamys
+    {
+	loop = true,
+        clip
+        {
+        file = media/sound/horn_Kamys.ogg,     
+        }
+    }
+
+	sound engine_Boo
+    {
+	loop = true,
+        clip
+        {
+        file = media/sound/engine_Boo.ogg,     
+        }
+    }
+
+	sound engine_start_Boo
+    {
+        clip
+        {
+        file = media/sound/engine_start_Boo.ogg,     
+        }
+    }
+
+	sound horn_Boo
+    {
+	loop = true,
+        clip
+        {
+        file = media/sound/horn_Boo.ogg,     
+        }
+    }
+
+	sound horn_Sayderax
+    {
+	loop = true,
+        clip
+        {
+        file = media/sound/horn_Sayderax.ogg,     
+        }
+    }
+
+	sound horn_BMW_Sayderax
+    {
+	loop = true,
+        clip
+        {
+        file = media/sound/horn_BMW_Sayderax.ogg,     
+        }
+    }
+
+
+	sound horn_Goida_Watermelon
+    {
+	loop = true,
+        clip
+        {
+        file = media/sound/horn_Goida_Watermelon.ogg,     
+        }
+    }
+
+}

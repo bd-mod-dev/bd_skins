@@ -1,0 +1,13 @@
+require "815Tatra6X6Tuning"
+
+local NewCarTuningTable = {}
+
+if ATA2TuningTable and ATA2TuningTable["Tatra8156X6"] then
+    local src = ATA2TuningTable["Tatra8156X6"]
+    NewCarTuningTable["Tatra8156X6FD_Sayderax"] = src
+    NewCarTuningTable["Tatra8156X6FD_Watermelon"] = src
+end
+
+if not table.isempty(NewCarTuningTable) and ATA2Tuning_AddNewCars then
+	ATA2Tuning_AddNewCars(NewCarTuningTable)
+end

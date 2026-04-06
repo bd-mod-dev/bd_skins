@@ -1,0 +1,35 @@
+module Base
+{
+
+
+	sound KAKCUKAlarm
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/Siren_Kakcuk.wav,
+		}
+	}
+	
+	sound KAKCUKYelp
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/Siren_Kakcuk.wav,
+		}
+	}
+	
+	sound KAKCUKWall
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/Siren_Kakcuk.wav,
+		}
+	}
+	
+}

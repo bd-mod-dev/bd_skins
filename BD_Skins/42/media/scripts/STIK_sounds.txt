@@ -1,0 +1,35 @@
+module Base
+{
+
+
+	sound STIKAlarm
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/Rammstein_Angst.ogg,
+		}
+	}
+	
+	sound STIKYelp
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/MANOWAR_Warriors_Of_The_World_United.ogg,
+		}
+	}
+	
+	sound STIKWall
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/Skillet_Psycho_in_my_Head.ogg,
+		}
+	}
+	
+}

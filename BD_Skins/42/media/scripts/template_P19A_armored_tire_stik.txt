@@ -1,0 +1,40 @@
+module Base
+{
+	template vehicle TireV100P19A_stik
+	{
+		template! = runFlatsLargeFront_stik,
+		template! = runFlatsLargeRear_stik,
+
+		part TireFrontLeft
+		{
+			table install
+			{
+			requireInstalled = SuspensionFrontLeft,
+			}
+		}
+
+		part TireFrontRight
+		{
+			table install
+			{
+			requireInstalled = SuspensionFrontRight,
+			}
+		}
+
+		part TireRearLeft
+		{
+			table install
+			{
+			requireInstalled = SuspensionRearLeft,
+			}
+		}
+
+		part TireRearRight
+		{
+			table install
+			{
+			requireInstalled = SuspensionRearRight,
+			}
+		}
+	}
+}

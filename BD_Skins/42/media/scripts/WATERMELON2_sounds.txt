@@ -1,0 +1,35 @@
+module Base
+{
+
+
+	sound WATERMELON2Alarm
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/Watermelon_Sigma.ogg,
+		}
+	}
+	
+	sound WATERMELON2Yelp
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/Watermelon_SSSR.ogg,
+		}
+	}
+	
+	sound WATERMELON2Wall
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/Watermelon_Ya_Russki.ogg,
+		}
+	}
+	
+}

@@ -1,0 +1,94 @@
+module Base
+{
+	model 91fordLTDcabBarrier_Rusty
+	{
+		mesh = vehicles/Vehicles_91fordLTD_Body|vic91_cab_barrier,
+		texture = Vehicles/Vehicles_91fordLTD_Interior_Rusty,
+		shader = damn_wheel_shader,
+		scale = 0.1,
+	}
+
+	template vehicle LTD91Barrier_Rusty
+		{
+		part DAMNBarrier
+        	{
+
+			model Barrier0
+				{
+                		file = 91fordLTDcabBarrier_Rusty,
+				}
+
+				area = Engine,
+				category = bodywork,
+				itemType = Base.91fordLTDCabBarrier,
+				mechanicRequireKey = false,
+                durability = 5,
+
+            		lua
+            		{
+					create = Vehicles.Create.Default,
+					}
+		}
+	}
+
+    template vehicle LTD91BarrierR_Rusty
+		{
+		part DAMNBarrier
+        	{
+
+			model Barrier0
+				{
+                		file = 91fordLTDcabBarrier_Rusty,
+				}
+
+				area = SeatRearLeft,
+				category = bodywork,
+				itemType = Base.91fordLTDCabBarrier,
+				mechanicRequireKey = false,
+                durability = 5,
+
+				table install
+			{
+				items
+				{
+					1
+					{
+						tags = Screwdriver,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:1,
+				door = DoorRearLeft,
+				recipes = Intermediate Mechanics,
+				test = Vehicles.InstallTest.Default,
+			}
+			table uninstall
+			{
+				items
+				{
+					1
+					{
+						tags = Screwdriver,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:1,
+				recipes = Intermediate Mechanics,
+				test = Vehicles.UninstallTest.Default,
+			}
+
+            		lua
+            		{
+					create = Vehicles.Create.Default,
+					}
+		}
+	}
+
+		
+}

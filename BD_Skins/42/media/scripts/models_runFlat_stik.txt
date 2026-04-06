@@ -1,0 +1,9 @@
+module Base
+{
+	model runFlatLargeTire_stik
+	{
+		mesh = vehicles/runFlat_models|runFlat_Large,
+		texture = vehicles/Wheels_runFlat_large_stik,
+		shader = damn_wheel_shader,
+	}
+}

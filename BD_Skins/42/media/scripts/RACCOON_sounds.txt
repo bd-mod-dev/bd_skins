@@ -1,0 +1,35 @@
+module Base
+{
+
+
+	sound RACCOONAlarm
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/Siren_RACCOON.ogg,
+		}
+	}
+	
+	sound RACCOONYelp
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_siren_yelp.wav,
+		}
+	}
+	
+	sound RACCOONWall
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_siren_wall.wav,
+		}
+	}
+	
+}

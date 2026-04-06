@@ -1,0 +1,35 @@
+module Base
+{
+
+
+	sound WATERMELONAlarm
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/Siren_Watermelon.ogg,
+		}
+	}
+	
+	sound WATERMELONYelp
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/Siren_Watermelon.ogg,
+		}
+	}
+	
+	sound WATERMELONWall
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/Siren_Watermelon.ogg,
+		}
+	}
+	
+}

@@ -1,0 +1,10 @@
+module Base
+{
+	vehicle TrailerAdvert
+	{
+		skin
+		{
+			texture = Vehicles/AdvertTrailerReklama,
+		}
+	}
+}
