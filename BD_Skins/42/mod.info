@@ -1,4 +1,5 @@
 name=[BD] Skins
 id=BD_Skins
 poster=poster.png
+require=damnlib,92amgeneralM998,87fordB700,91nissan240sx
 description=Car Skins for Before Death

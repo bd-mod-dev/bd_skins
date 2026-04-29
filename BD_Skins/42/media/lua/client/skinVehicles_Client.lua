@@ -55,6 +55,9 @@ DAMN.EnterAnimations:registerVehicleScript("Base.92amgeneralM998_Sinod", "basic"
 DAMN.EnterAnimations:registerVehicleScript("Base.92amgeneralM998_Dismor", "basic");
 DAMN.EnterAnimations:registerVehicleScript("Base.92amgeneralM998_LILITH", "basic");
 
+DAMN.EnterAnimations:registerVehicleScript("Base.91nissan240sx_4SIS", "low");
+DAMN.EnterAnimations:registerVehicleScript("Base.91nissan240sx2_4SIS", "low");
+
 DAMN.EnterAnimations:registerVehicleScript("Base.92nissanGTR_Skin", "low");
 DAMN.EnterAnimations:registerVehicleScript("Base.92nissanGTR_Ksora", "low");
 DAMN.EnterAnimations:registerVehicleScript("Base.92nissanGTR_ganksta", "low");

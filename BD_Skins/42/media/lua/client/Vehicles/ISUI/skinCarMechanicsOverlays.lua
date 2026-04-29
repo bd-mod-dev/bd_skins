@@ -1,3 +1,4 @@
+require "Vehicles/ISUI/91nissan240sx_CarMechanicsOverlay"
 require "Vehicles/ISUI/49powerWagonMechanicsOverlay"
 require "Vehicles/ISUI/63beetleCarMechanicsOverlay"
 require "Vehicles/ISUI/63Type2VanCarMechanicsOverlay"
@@ -29,6 +30,11 @@ require "Vehicles/ISUI/91fordLTDCarMechanicsOverlay"
 local x = ISCarMechanicsOverlay.CarList
 
 local skinMap = {
+	["Base.91nissan240sx"] = {
+		"Base.91nissan240sx_4SIS",
+		"Base.91nissan240sx2_4SIS",
+	},
+
 	["Base.49powerWagonPA"] = {
 		"Base.49powerWagonPA_Skin",
 	},

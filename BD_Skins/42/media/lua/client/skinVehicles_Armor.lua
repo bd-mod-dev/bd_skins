@@ -1,3 +1,4 @@
+require "91nissan240sx_armor"
 require "49powerWagon_armor"
 require "63beetle_armor"
 require "63Type2Van_armor"
@@ -23,6 +24,12 @@ require "93chevySuburban_armor"
 require "93fordF350_armor"
 require "98stagea_armor"
 require "91fordLTD_armor"
+
+if N240 and N240.activeArmor then
+	DAMN.Armor:add("Base.91nissan240sx_4SIS",  N240.activeArmor)
+	DAMN.Armor:add("Base.91nissan240sx2_4SIS", N240.activeArmor)
+end
+
 
 if PWR and PWR.activeArmor then
 	DAMN.Armor:add("Base.49powerWagonPA_Skin", PWR.activeArmor)

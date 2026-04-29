@@ -1,0 +1,69 @@
+module Base
+{
+	/* KA24DE — Nissan 240SX (S13) naturally aspirated 2.4L
+	   Tuned performance build, ~180hp, 6-speed close-ratio
+	   Redline ~7200 RPM */
+
+	vehicleEngineRPM KA24DETUNED
+	{
+		VERSION = 1,
+		data { gearChange = 3500, afterGearChange = 2600, }
+		data { gearChange = 4300, afterGearChange = 3200, }
+		data { gearChange = 4800, afterGearChange = 3550, }
+		data { gearChange = 5300, afterGearChange = 4000, }
+		data { gearChange = 7000, afterGearChange = 4500, }
+	}
+
+	/* master = VehicleEngine connects to FMOD RPM bus — pitch shifts automatically with RPM */
+	sound N240_4SIS_Engine
+	{
+		category = Vehicle,
+		master = VehicleEngine,
+		clip
+		{
+			event = Vehicle/Sport/Engine,
+			distanceMax = 60,
+		}
+	}
+
+	/* One-shot SFX — no master, fixed pitch, played by Lua via vehicle:getEmitter() */
+	sound N240_4SIS_BurbleLow
+	{
+		category = Vehicle,
+		clip
+		{
+			file = media/sound/N240sx_4SIS_burble_low.wav,
+			distanceMax = 40,
+		}
+	}
+
+	sound N240_4SIS_BurbleMid
+	{
+		category = Vehicle,
+		clip
+		{
+			file = media/sound/N240sx_4SIS_burble_mid.wav,
+			distanceMax = 50,
+		}
+	}
+
+	sound N240_4SIS_BurbleHigh
+	{
+		category = Vehicle,
+		clip
+		{
+			file = media/sound/N240sx_4SIS_burble_high.wav,
+			distanceMax = 60,
+		}
+	}
+
+	sound N240_4SIS_TurboSurge
+	{
+		category = Vehicle,
+		clip
+		{
+			file = media/sound/N240sx_4SIS_surge.wav,
+			distanceMax = 50,
+		}
+	}
+}

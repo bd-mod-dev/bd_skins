@@ -1,0 +1,303 @@
+module Base
+{
+	model 91nissan240sx_4SIS_WheelL1
+	{
+		mesh = vehicles/Vehicles_91nissan240sx_Wheels|240sx_tire3,
+		texture = Vehicles/Vehicles_91nissan240sx_4SIS_wheel1,
+		shader = damn_wheel_shader,
+		scale = 0.1,
+	}
+	model 91nissan240sx_4SIS_WheelR1
+	{
+		mesh = vehicles/Vehicles_91nissan240sx_Wheels|240sx_tire3,
+		texture = Vehicles/Vehicles_91nissan240sx_4SIS_wheel1,
+		shader = damn_wheel_shader,
+		scale = 0.1,
+		invertX = TRUE,
+	}
+
+	model 91nissan240sx_4SIS_WheelL2
+	{
+		mesh = vehicles/Vehicles_91nissan240sx_Wheels|240sx_tire3,
+		texture = Vehicles/Vehicles_91nissan240sx_4SIS_wheel2,
+		shader = damn_wheel_shader,
+		scale = 0.1,
+	}
+	model 91nissan240sx_4SIS_WheelR2
+	{
+		mesh = vehicles/Vehicles_91nissan240sx_Wheels|240sx_tire3,
+		texture = Vehicles/Vehicles_91nissan240sx_4SIS_wheel2,
+		shader = damn_wheel_shader,
+		scale = 0.1,
+		invertX = TRUE,
+	}
+
+	model 91nissan240sx_4SIS_WheelL3
+	{
+		mesh = vehicles/Vehicles_91nissan240sx_Wheels|240sx_tire4,
+		texture = Vehicles/Vehicles_91nissan240sx_4SIS_wheel3,
+		shader = damn_wheel_shader,
+		scale = 0.1,
+	}
+	model 91nissan240sx_4SIS_WheelR3
+	{
+		mesh = vehicles/Vehicles_91nissan240sx_Wheels|240sx_tire4,
+		texture = Vehicles/Vehicles_91nissan240sx_4SIS_wheel3,
+		shader = damn_wheel_shader,
+		scale = 0.1,
+		invertX = TRUE,
+	}
+
+	model 91nissan240sx_4SIS_WheelL4
+	{
+		mesh = vehicles/Vehicles_91nissan240sx_Wheels|240sx_tire4,
+		texture = Vehicles/Vehicles_91nissan240sx_4SIS_wheel4,
+		shader = damn_wheel_shader,
+		scale = 0.1,
+	}
+	model 91nissan240sx_4SIS_WheelR4
+	{
+		mesh = vehicles/Vehicles_91nissan240sx_Wheels|240sx_tire4,
+		texture = Vehicles/Vehicles_91nissan240sx_4SIS_wheel4,
+		shader = damn_wheel_shader,
+		scale = 0.1,
+		invertX = TRUE,
+	}
+
+	template vehicle 4SISTires
+	{
+		part TireFrontLeft
+		{
+			model Tire1
+			{
+				file = 91nissan240sx_4SIS_WheelL1,
+			}
+			model Tire2
+			{
+				file = 91nissan240sx_4SIS_WheelL2,
+			}
+			model Tire3
+			{
+				file = 91nissan240sx_4SIS_WheelL3,
+			}
+			model Tire4
+			{
+				file = 91nissan240sx_4SIS_WheelL4,
+			}
+			model Tire5
+			{
+				file = 91nissan240sxWheelL5,
+			}
+
+			area = TireFrontLeft,
+			wheel = FrontLeft,
+			table install
+			{
+				complete = N240_4SIS.InstallComplete.TireFrontLeft,
+				requireInstalled = BrakeFrontLeft;SuspensionFrontLeft,
+			}
+			table uninstall
+			{
+				complete = N240_4SIS.UninstallComplete.TireFrontLeft,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Tire,
+				init = N240_4SIS.Init.TireFrontLeft,
+				checkOperate = Vehicles.CheckOperate.Tire,
+				update = Vehicles.Update.Tire,
+			}
+		}
+
+		part TireFrontRight
+		{
+			model Tire1
+			{
+				file = 91nissan240sx_4SIS_WheelR1,
+			}
+			model Tire2
+			{
+				file = 91nissan240sx_4SIS_WheelR2,
+			}
+			model Tire3
+			{
+				file = 91nissan240sx_4SIS_WheelR3,
+			}
+			model Tire4
+			{
+				file = 91nissan240sx_4SIS_WheelR4,
+			}
+			model Tire5
+			{
+				file = 91nissan240sxWheelR5,
+			}
+
+			area = TireFrontRight,
+			wheel = FrontRight,
+			table install
+			{
+				complete = N240_4SIS.InstallComplete.TireFrontRight,
+				requireInstalled = BrakeFrontRight;SuspensionFrontRight,
+			}
+			table uninstall
+			{
+				complete = N240_4SIS.UninstallComplete.TireFrontRight,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Tire,
+				init = N240_4SIS.Init.TireFrontRight,
+				checkOperate = Vehicles.CheckOperate.Tire,
+				update = Vehicles.Update.Tire,
+			}
+		}
+
+		part TireRearLeft
+		{
+			model Tire1
+			{
+				file = 91nissan240sx_4SIS_WheelL1,
+			}
+			model Tire2
+			{
+				file = 91nissan240sx_4SIS_WheelL2,
+			}
+			model Tire3
+			{
+				file = 91nissan240sx_4SIS_WheelL3,
+			}
+			model Tire4
+			{
+				file = 91nissan240sx_4SIS_WheelL4,
+			}
+			model Tire5
+			{
+				file = 91nissan240sxWheelL5,
+			}
+
+			area = TireRearLeft,
+			wheel = RearLeft,
+			table install
+			{
+				complete = N240_4SIS.InstallComplete.TireRearLeft,
+				requireInstalled = BrakeRearLeft;SuspensionRearLeft,
+			}
+			table uninstall
+			{
+				complete = N240_4SIS.UninstallComplete.TireRearLeft,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Tire,
+				init = N240_4SIS.Init.TireRearLeft,
+				checkOperate = Vehicles.CheckOperate.Tire,
+				update = Vehicles.Update.Tire,
+			}
+		}
+
+		part TireRearRight
+		{
+			model Tire1
+			{
+				file = 91nissan240sx_4SIS_WheelR1,
+			}
+			model Tire2
+			{
+				file = 91nissan240sx_4SIS_WheelR2,
+			}
+			model Tire3
+			{
+				file = 91nissan240sx_4SIS_WheelR3,
+			}
+			model Tire4
+			{
+				file = 91nissan240sx_4SIS_WheelR4,
+			}
+			model Tire5
+			{
+				file = 91nissan240sxWheelR5,
+			}
+
+			area = TireRearRight,
+			wheel = RearRight,
+			table install
+			{
+				complete = N240_4SIS.InstallComplete.TireRearRight,
+				requireInstalled = BrakeRearRight;SuspensionRearRight,
+			}
+			table uninstall
+			{
+				complete = N240_4SIS.UninstallComplete.TireRearRight,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Tire,
+				init = N240_4SIS.Init.TireRearRight,
+				checkOperate = Vehicles.CheckOperate.Tire,
+				update = Vehicles.Update.Tire,
+			}
+		}
+
+		part Tire*
+		{
+			category = tire,
+			specificItem = false,
+			itemType = Base.91nissan240sxOEM13;Base.91nissan240sxOEM23;Base.91nissan240sxG73;Base.91nissan240sxGT3;damnCraft.SmallTire1,
+			durability = 2,
+			container
+			{
+				capacity = 35,
+				test = Vehicles.ContainerAccess.Tire,
+				contentType = Air,
+			}
+			table install
+			{
+				items
+				{
+					1
+					{
+						type = Base.Jack,
+						count = 1,
+						keep = true,
+					}
+					2
+					{
+						tags = LugWrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 400,
+				skills = Mechanics:1,
+				test = Vehicles.InstallTest.Default,
+			}
+			table uninstall
+			{
+				items
+				{
+					1
+					{
+						type = Base.Jack,
+						count = 1,
+						keep = true,
+					}
+					2
+					{
+						tags = LugWrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 400,
+				skills = Mechanics:1,
+				test = Vehicles.UninstallTest.Default,
+			}
+		}
+	}
+}
