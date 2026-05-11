@@ -47,6 +47,8 @@ DAMN.EnterAnimations:registerVehicleScript("Base.87toyotaMR2_Skin", "low");
 DAMN.EnterAnimations:registerVehicleScript("Base.89volvo245wagon_vstanislav", "low");
 
 DAMN.EnterAnimations:registerVehicleScript("Base.90bmwE30m3_Skin", "low");
+DAMN.EnterAnimations:registerVehicleScript("Base.90bmwE30m3_DTM_TIC", "low");
+DAMN.EnterAnimations:registerVehicleScript("Base.90bmwE30m3_DTM_JAG", "low");
 
 -- 91geoMetro_Skin
 

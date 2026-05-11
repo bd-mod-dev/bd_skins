@@ -132,7 +132,9 @@ end
 
 
 if BMWE30 and BMWE30.activeArmor then
-	DAMN.Armor:add("Base.90bmwE30m3_Skin", BMWE30.activeArmor)
+	DAMN.Armor:add("Base.90bmwE30m3_Skin",    BMWE30.activeArmor)
+	DAMN.Armor:add("Base.90bmwE30m3_DTM_TIC", BMWE30.activeArmor)
+	DAMN.Armor:add("Base.90bmwE30m3_DTM_JAG", BMWE30.activeArmor)
 end
 
 

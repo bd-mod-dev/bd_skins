@@ -1,0 +1,59 @@
+module Base
+{
+	/* S14B25 Evo III — BMW M3 E30 DTM-derived 2.3L inline-4
+	   Race-spec naturally-aspirated build, ~300hp, 5-speed close-ratio
+	   Redline ~8500 RPM */
+
+	vehicleEngineRPM S14B25EVO3
+	{
+		VERSION = 1,
+		data { gearChange = 3900, afterGearChange = 2800, }
+		data { gearChange = 4500, afterGearChange = 3300, }
+		data { gearChange = 5500, afterGearChange = 4000, }
+		data { gearChange = 6500, afterGearChange = 5000, }
+		data { gearChange = 7100, afterGearChange = 6000, }
+	}
+
+	/* master = VehicleEngine connects to FMOD RPM bus — pitch shifts automatically with RPM */
+	sound E30_DTM_Engine
+	{
+		category = Vehicle,
+		master = VehicleEngine,
+		clip
+		{
+			event = Vehicle/Sport/Engine,
+			distanceMax = 60,
+		}
+	}
+
+	/* Burble accents — reuse N240_4SIS wav files, no surge (naturally-aspirated engine) */
+	sound E30_DTM_BurbleLow
+	{
+		category = Vehicle,
+		clip
+		{
+			file = media/sound/N240sx_4SIS_burble_low.wav,
+			distanceMax = 40,
+		}
+	}
+
+	sound E30_DTM_BurbleMid
+	{
+		category = Vehicle,
+		clip
+		{
+			file = media/sound/N240sx_4SIS_burble_mid.wav,
+			distanceMax = 50,
+		}
+	}
+
+	sound E30_DTM_BurbleHigh
+	{
+		category = Vehicle,
+		clip
+		{
+			file = media/sound/N240sx_4SIS_burble_high.wav,
+			distanceMax = 60,
+		}
+	}
+}

@@ -114,6 +114,8 @@ local skinMap = {
 	
 	["Base.90bmwE30m3"] = {
 		"Base.90bmwE30m3_Skin",
+		"Base.90bmwE30m3_DTM_TIC",
+		"Base.90bmwE30m3_DTM_JAG",
 	},
 	
 	["Base.90fordF350ambulance"] = {
