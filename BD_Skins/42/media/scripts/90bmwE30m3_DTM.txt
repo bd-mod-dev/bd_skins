@@ -58,7 +58,7 @@ module Base
 		}
 
 		extents = 1.6222 1.1778 4.2889,
-		mass = 880,
+		mass = 1080,
 		physicsChassisShape = 1.6222 1.1778 4.2889,
 		centerOfMassOffset = 0.0000 0.5889 0.0000,
 		shadowExtents = 2.0207 4.3926,
@@ -85,8 +85,8 @@ module Base
 
 		gearRatioCount = 5,
 		gearRatioR = 3.5,
-		gearRatio1 = 3.2,
-		gearRatio2 = 2.3,
+		gearRatio1 = 3.35,
+		gearRatio2 = 2.65,
 		gearRatio3 = 1.70,
 		gearRatio4 = 1.30,
 		gearRatio5 = 1.05,
@@ -544,7 +544,7 @@ module Base
 		}
 
 		extents = 1.6222 1.1778 4.2889,
-		mass = 890,
+		mass = 1090,
 		physicsChassisShape = 1.6222 1.1778 4.2889,
 		centerOfMassOffset = 0.0000 0.5889 0.0000,
 		shadowExtents = 2.0207 4.3926,
@@ -571,8 +571,8 @@ module Base
 
 		gearRatioCount = 5,
 		gearRatioR = 3.5,
-		gearRatio1 = 3.2,
-		gearRatio2 = 2.3,
+		gearRatio1 = 3.35,
+		gearRatio2 = 2.65,
 		gearRatio3 = 1.70,
 		gearRatio4 = 1.30,
 		gearRatio5 = 1.05,

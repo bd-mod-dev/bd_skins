@@ -7,11 +7,11 @@ module Base
 	vehicleEngineRPM S14B25EVO3
 	{
 		VERSION = 1,
-		data { gearChange = 3900, afterGearChange = 2800, }
-		data { gearChange = 4500, afterGearChange = 3300, }
-		data { gearChange = 5500, afterGearChange = 4000, }
-		data { gearChange = 6500, afterGearChange = 5000, }
-		data { gearChange = 7100, afterGearChange = 6000, }
+		data { gearChange = 3500, afterGearChange = 2800, }
+		data { gearChange = 4000, afterGearChange = 3000, }
+		data { gearChange = 5200, afterGearChange = 3500, }
+		data { gearChange = 5700, afterGearChange = 4900, }
+		data { gearChange = 7100, afterGearChange = 5400, }
 	}
 
 	/* master = VehicleEngine connects to FMOD RPM bus — pitch shifts automatically with RPM */
