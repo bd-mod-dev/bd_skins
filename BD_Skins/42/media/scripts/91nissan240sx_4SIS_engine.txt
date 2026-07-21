@@ -57,12 +57,32 @@ module Base
 		}
 	}
 
-	sound N240_4SIS_TurboSurge
+	sound N240_4SIS_TurboSurge1
 	{
 		category = Vehicle,
 		clip
 		{
-			file = media/sound/N240sx_4SIS_surge.wav,
+			file = media/sound/turbo_surge_sm2_1.wav,
+			distanceMax = 50,
+		}
+	}
+
+	sound N240_4SIS_TurboSurge2
+	{
+		category = Vehicle,
+		clip
+		{
+			file = media/sound/turbo_surge_sm2_2.wav,
+			distanceMax = 50,
+		}
+	}
+
+	sound N240_4SIS_TurboSurge3
+	{
+		category = Vehicle,
+		clip
+		{
+			file = media/sound/turbo_surge_sm2_3.wav,
 			distanceMax = 50,
 		}
 	}
