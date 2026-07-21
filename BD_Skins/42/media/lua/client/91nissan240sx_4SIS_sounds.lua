@@ -13,8 +13,8 @@ local BOOST_ARM_RPM         = 3500;   -- throttle held above this RPM = boost ar
 local SURGE_HIGH_RPM        = 4250;   -- peak RPM threshold for loud surge
 local BURBLE_PEAK_RPM       = 4750;   -- peak RPM threshold to maybe pop a burble
 
-local SURGE_LOW_VOLUME      = 0.40;
-local SURGE_HIGH_VOLUME     = 0.70;
+local SURGE_LOW_VOLUME      = 0.30;
+local SURGE_HIGH_VOLUME     = 0.55;
 
 local SURGE_COOLDOWN_MS     = 1200;
 
@@ -145,9 +145,8 @@ local function onPlayerUpdate(player)
 		peakRpm    = 0;
 	end
 
-	-- After enough sustained throttle, start fading any falloff samples that are still ringing
+	-- After enough sustained throttle, fade the burble tail. Surge is left alone so it rings to the end.
 	if md.throttleHoldTicks > THROTTLE_HOLD_TICKS then
-		if md.surgeId  and not md.surgeFade  then md.surgeFade  = FADE_TICKS; end
 		if md.burbleId and not md.burbleFade then md.burbleFade = FADE_TICKS; end
 	end
 
