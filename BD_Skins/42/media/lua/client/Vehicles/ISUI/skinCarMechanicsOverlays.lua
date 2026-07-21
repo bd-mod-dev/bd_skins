@@ -131,6 +131,8 @@ local skinMap = {
 		"Base.92amgeneralM998_Sinod",
 		"Base.92amgeneralM998_Dismor",
 		"Base.92amgeneralM998_LILITH",
+		"Base.92amgeneralM998_Obi",
+		"Base.92amgeneralM998_Yanka",
 	},
 	
 	["Base.92nissanGTR"] = {

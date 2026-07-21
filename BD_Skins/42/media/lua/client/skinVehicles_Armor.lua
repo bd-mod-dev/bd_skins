@@ -153,6 +153,8 @@ if M998 and M998.activeArmor then
 	DAMN.Armor:add("Base.92amgeneralM998_Sinod", M998.activeArmor)
 	DAMN.Armor:add("Base.92amgeneralM998_Dismor", M998.activeArmor)
 	DAMN.Armor:add("Base.92amgeneralM998_LILITH", M998.activeArmor)
+	DAMN.Armor:add("Base.92amgeneralM998_Obi", M998.activeArmor)
+	DAMN.Armor:add("Base.92amgeneralM998_Yanka", M998.activeArmor)
 end
 
 
