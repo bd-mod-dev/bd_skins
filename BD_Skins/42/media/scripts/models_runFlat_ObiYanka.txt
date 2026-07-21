@@ -1,0 +1,9 @@
+module Base
+{
+	model runFlatSmallTire_ObiYanka
+	{
+		mesh = vehicles/runFlat_models|runFlat_Small,
+		texture = vehicles/Wheels_runFlat_small_ObiYanka,
+		shader = damn_wheel_shader,
+	}
+}
