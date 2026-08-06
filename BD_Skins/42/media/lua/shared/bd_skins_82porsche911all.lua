@@ -1,5 +1,5 @@
 --****************************************************************
---** BD Vehicle Simple Skins and Tints — 82 Porsche 911 Turbo   **
+--** BD Vehicle Simple Skins and Tints — 82 Porsche 911 (all)   **
 --****************************************************************
 
 local skins = {
@@ -24,4 +24,5 @@ Events.OnGameBoot.Add(function()
     for _, tex in ipairs(skins) do
         DAMN.ScriptTools:addSkinToVehicleScript("Base.82porsche911turbo", tex);
     end
+    DAMN.ScriptTools:addSkinToVehicleScript("Base.82porsche911rwb", "Vehicles/Vehicles_82porsche911rwb_Shell_DTM_GULF");
 end)
