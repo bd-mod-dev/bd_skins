@@ -100,6 +100,7 @@ end
 if PRS82 and PRS82.activeArmor then
 	DAMN.Armor:add("Base.82porsche911turbo_Skin", PRS82.activeArmor)
 	DAMN.Armor:add("Base.82porsche911rwb_Skin", PRS82.activeArmor)
+	DAMN.Armor:add("Base.82porsche911rwb_KoTnz", PRS82.activeArmor)
 end
 
 

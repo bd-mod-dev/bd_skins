@@ -32,6 +32,7 @@ DAMN.EnterAnimations:registerVehicleScript("Base.81deloreanDMC12_Skin", "sport")
 
 DAMN.EnterAnimations:registerVehicleScript("Base.82porsche911turbo_Skin", "sport");
 DAMN.EnterAnimations:registerVehicleScript("Base.82porsche911rwb_Skin", "sport");
+DAMN.EnterAnimations:registerVehicleScript("Base.82porsche911rwb_KoTnz", "sport");
 
 DAMN.EnterAnimations:registerVehicleScript("Base.84mercLWB4_Skin", "basic");
 DAMN.EnterAnimations:registerVehicleScript("Base.84mercLWB4M_Boo", "basic");
