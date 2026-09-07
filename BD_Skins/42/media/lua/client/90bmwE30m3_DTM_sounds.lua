@@ -79,7 +79,8 @@ local function onPlayerUpdate(player)
 	local now      = getTimestampMs();
 	local rpm      = vehicle:getEngineSpeed();
 	local gear     = vehicle:getTransmissionNumber();
-	local throttle = isKeyDown(Keyboard.KEY_W);
+	-- In reverse the accelerator is the Backward key, not Forward.
+	local throttle = isKeyDown(getCore():getKey(gear < 0 and "Backward" or "Forward"));
 	local emitter  = vehicle:getEmitter();
 
 	local lastGear    = md.dtmLastGear    or gear;
@@ -94,13 +95,14 @@ local function onPlayerUpdate(player)
 		md.dtmThrottleHoldTicks = 0;
 	end
 
-	if throttle and gear > 0 and rpm >= BOOST_ARM_RPM then
+	-- gear: 0 = neutral, -1 = reverse, 1..N = forward. Reverse boosts too.
+	if throttle and gear ~= 0 and rpm >= BOOST_ARM_RPM then
 		boostArmed = true;
 		if rpm > peakRpm then peakRpm = rpm; end
 	end
 
-	local liftEvent  = boostArmed and wasThrottle and not throttle and gear > 0;
-	local shiftEvent = boostArmed and gear > lastGear and gear > 0;
+	local liftEvent  = boostArmed and wasThrottle and not throttle and gear ~= 0;
+	local shiftEvent = boostArmed and lastGear > 0 and gear > lastGear;
 
 	if burbleReady and (liftEvent or shiftEvent) and peakRpm >= BURBLE_PEAK_RPM then
 		local idx  = ((md.dtmBurbleIdx or 0) % #BURBLE_POOL) + 1;

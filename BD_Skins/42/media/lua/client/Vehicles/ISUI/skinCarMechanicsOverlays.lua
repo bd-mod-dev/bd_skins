@@ -87,6 +87,7 @@ local skinMap = {
 	["Base.82porsche911turbo"] = {
 		"Base.82porsche911turbo_Skin",
 		"Base.82porsche911rwb_Skin",
+		"Base.82porsche911rwb_KoTnz",
 	},
 	
 	["Base.84mercLWB4"] = {
@@ -131,6 +132,8 @@ local skinMap = {
 		"Base.92amgeneralM998_Sinod",
 		"Base.92amgeneralM998_Dismor",
 		"Base.92amgeneralM998_LILITH",
+		"Base.92amgeneralM998_Obi",
+		"Base.92amgeneralM998_Yanka",
 	},
 	
 	["Base.92nissanGTR"] = {
