@@ -10,11 +10,9 @@ local TARGETS = {
 
 -- Tunables — see 91nissan240sx_4SIS_engine.txt for shift points
 local BOOST_ARM_RPM         = 3500;   -- throttle held above this RPM = boost armed
-local SURGE_HIGH_RPM        = 4250;   -- peak RPM threshold for loud surge
 local BURBLE_PEAK_RPM       = 4750;   -- peak RPM threshold to maybe pop a burble
 
-local SURGE_LOW_VOLUME      = 0.40;
-local SURGE_HIGH_VOLUME     = 0.70;
+local SURGE_VOLUME          = 0.25;   -- flat; low-rev gate is BOOST_ARM_RPM above
 
 local SURGE_COOLDOWN_MS     = 1200;
 
@@ -23,6 +21,19 @@ local SURGE_COOLDOWN_MS     = 1200;
 local THROTTLE_HOLD_TICKS   = 3;
 local FADE_TICKS            = 2;
 local FADE_FACTOR           = 0.5;    -- volume multiplier per fade step
+
+-- Surge sample pool — picked at random, no silent slots (a surge always fires on the event).
+local SURGE_POOL = {
+	"N240_4SIS_TurboSurge1",
+	"N240_4SIS_TurboSurge2",
+	"N240_4SIS_TurboSurge3",
+	"N240_4SIS_TurboSurge1",
+	"N240_4SIS_TurboSurge2",
+	"N240_4SIS_TurboSurge3",
+	"N240_4SIS_TurboSurge1",
+	"N240_4SIS_TurboSurge2",
+	"N240_4SIS_TurboSurge3",
+};
 
 -- Burble accent pool — cycled, not random. Includes silent slots so it doesn't fire every time.
 -- Distribution: low x3, mid x4, high x2 (rare), silent x3. Volumes vary per slot.
@@ -95,7 +106,8 @@ local function onPlayerUpdate(player)
 	local now      = getTimestampMs();
 	local rpm      = vehicle:getEngineSpeed();
 	local gear     = vehicle:getTransmissionNumber();
-	local throttle = isKeyDown(Keyboard.KEY_W);
+	-- In reverse the accelerator is the Backward key, not Forward.
+	local throttle = isKeyDown(getCore():getKey(gear < 0 and "Backward" or "Forward"));
 	local emitter  = vehicle:getEmitter();
 
 	local lastGear     = md.lastGear     or gear;
@@ -114,18 +126,18 @@ local function onPlayerUpdate(player)
 	end
 
 	-- Arm boost when throttle held above the threshold; track peak RPM during build
-	if throttle and gear > 0 and rpm >= BOOST_ARM_RPM then
+	-- gear: 0 = neutral, -1 = reverse, 1..N = forward. Reverse boosts too.
+	if throttle and gear ~= 0 and rpm >= BOOST_ARM_RPM then
 		boostArmed = true;
 		if rpm > peakRpm then peakRpm = rpm; end
 	end
 
 	-- Falloff events: throttle release OR upshift while armed
-	local liftEvent  = boostArmed and wasThrottle and not throttle and gear > 0;
-	local shiftEvent = boostArmed and gear > lastGear and gear > 0;
+	local liftEvent  = boostArmed and wasThrottle and not throttle and gear ~= 0;
+	local shiftEvent = boostArmed and lastGear > 0 and gear > lastGear;
 
 	if surgeReady and (liftEvent or shiftEvent) then
-		local surgeVol = (peakRpm >= SURGE_HIGH_RPM) and SURGE_HIGH_VOLUME or SURGE_LOW_VOLUME;
-		playTracked(emitter, md, SURGE_SLOT, "N240_4SIS_TurboSurge", surgeVol);
+		playTracked(emitter, md, SURGE_SLOT, SURGE_POOL[ZombRand(#SURGE_POOL) + 1], SURGE_VOLUME);
 		if peakRpm >= BURBLE_PEAK_RPM then
 			local idx  = ((md.burbleIdx or 0) % #BURBLE_POOL) + 1;
 			local pick = BURBLE_POOL[idx];
@@ -145,9 +157,8 @@ local function onPlayerUpdate(player)
 		peakRpm    = 0;
 	end
 
-	-- After enough sustained throttle, start fading any falloff samples that are still ringing
+	-- After enough sustained throttle, fade the burble tail. Surge is left alone so it rings to the end.
 	if md.throttleHoldTicks > THROTTLE_HOLD_TICKS then
-		if md.surgeId  and not md.surgeFade  then md.surgeFade  = FADE_TICKS; end
 		if md.burbleId and not md.burbleFade then md.burbleFade = FADE_TICKS; end
 	end
 

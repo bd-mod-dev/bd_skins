@@ -1,0 +1,34 @@
+module Base
+{
+	/* One-shot BOV samples — no master, fixed pitch, played by Lua via vehicle:getEmitter() */
+
+	sound PRS82_KoTnz_TurboSurge1
+	{
+		category = Vehicle,
+		clip
+		{
+			file = media/sound/turbo_surge_md2_1.wav,
+			distanceMax = 70,
+		}
+	}
+
+	sound PRS82_KoTnz_TurboSurge2
+	{
+		category = Vehicle,
+		clip
+		{
+			file = media/sound/turbo_surge_md2_2.wav,
+			distanceMax = 70,
+		}
+	}
+
+	sound PRS82_KoTnz_TurboSurge3
+	{
+		category = Vehicle,
+		clip
+		{
+			file = media/sound/turbo_surge_md2_3.wav,
+			distanceMax = 70,
+		}
+	}
+}

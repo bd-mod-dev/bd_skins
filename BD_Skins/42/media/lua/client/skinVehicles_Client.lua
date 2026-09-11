@@ -32,6 +32,7 @@ DAMN.EnterAnimations:registerVehicleScript("Base.81deloreanDMC12_Skin", "sport")
 
 DAMN.EnterAnimations:registerVehicleScript("Base.82porsche911turbo_Skin", "sport");
 DAMN.EnterAnimations:registerVehicleScript("Base.82porsche911rwb_Skin", "sport");
+DAMN.EnterAnimations:registerVehicleScript("Base.82porsche911rwb_KoTnz", "sport");
 
 DAMN.EnterAnimations:registerVehicleScript("Base.84mercLWB4_Skin", "basic");
 DAMN.EnterAnimations:registerVehicleScript("Base.84mercLWB4M_Boo", "basic");
@@ -56,6 +57,8 @@ DAMN.EnterAnimations:registerVehicleScript("Base.92amgeneralM998_Skin", "basic")
 DAMN.EnterAnimations:registerVehicleScript("Base.92amgeneralM998_Sinod", "basic");
 DAMN.EnterAnimations:registerVehicleScript("Base.92amgeneralM998_Dismor", "basic");
 DAMN.EnterAnimations:registerVehicleScript("Base.92amgeneralM998_LILITH", "basic");
+DAMN.EnterAnimations:registerVehicleScript("Base.92amgeneralM998_Obi", "basic");
+DAMN.EnterAnimations:registerVehicleScript("Base.92amgeneralM998_Yanka", "basic");
 
 DAMN.EnterAnimations:registerVehicleScript("Base.91nissan240sx_4SIS", "low");
 DAMN.EnterAnimations:registerVehicleScript("Base.91nissan240sx2_4SIS", "low");

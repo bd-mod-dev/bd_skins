@@ -100,6 +100,7 @@ end
 if PRS82 and PRS82.activeArmor then
 	DAMN.Armor:add("Base.82porsche911turbo_Skin", PRS82.activeArmor)
 	DAMN.Armor:add("Base.82porsche911rwb_Skin", PRS82.activeArmor)
+	DAMN.Armor:add("Base.82porsche911rwb_KoTnz", PRS82.activeArmor)
 end
 
 
@@ -153,6 +154,8 @@ if M998 and M998.activeArmor then
 	DAMN.Armor:add("Base.92amgeneralM998_Sinod", M998.activeArmor)
 	DAMN.Armor:add("Base.92amgeneralM998_Dismor", M998.activeArmor)
 	DAMN.Armor:add("Base.92amgeneralM998_LILITH", M998.activeArmor)
+	DAMN.Armor:add("Base.92amgeneralM998_Obi", M998.activeArmor)
+	DAMN.Armor:add("Base.92amgeneralM998_Yanka", M998.activeArmor)
 end
 
 
